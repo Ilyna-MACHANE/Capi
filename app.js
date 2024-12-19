@@ -3,7 +3,6 @@
  * @brief Fichier principal pour l'application Planning Poker.
  * @details Ce fichier contient toutes les fonctions principales pour gérer les votes, les joueurs et les tâches.
  */
-
 document.addEventListener("DOMContentLoaded", () => {
     // Éléments HTML
     const btnDemarrer = document.getElementById('demarrerJeu');
@@ -337,7 +336,7 @@ function gererUnanimite() {
         const joueurMin = obtenirJoueurParVote(votesJoueurs, minVote);
         const joueurMax = obtenirJoueurParVote(votesJoueurs, maxVote);
 
-        (joueurMin && joueurMax) {
+        if (joueurMin && joueurMax) {
             resultatVote.innerHTML = `<p>${joueurMin} (min) et ${joueurMax} (max), discutez et revotez !</p>`;
         }
 
@@ -361,9 +360,6 @@ function gererUnanimite() {
     }
 }
 
-
-
-    
 
 /**
  * @brief Gère le mode de jeu basé sur la moyenne des votes.
