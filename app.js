@@ -346,7 +346,7 @@ function gererUnanimite() {
             votesJoueurs = {}; // Réinitialise les votes
             resultatVote.innerHTML = `C'est au tour de ${joueurs[joueurActuelIndex]} de voter.`;
         });
-    }
+    } 
     // Cas où il y a unanimité
     else {
         const unanimite = minVote;
